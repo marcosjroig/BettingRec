@@ -26,7 +26,8 @@ The object “markets” has low cohesion inside of the method as it is not used
 
 In addition, the object “markets” it is used in a “disconnected” mode from some part of the code, which make the code difficult to read, example:
 
-•	It is declared at the top but used in the middle of the method. This is a bad practice for code readability.
+•	It is declared at the top but used in the middle of the method. This is a bad practice for code readability. 
+
 •	It is also making the calculation for Tennis, then it comes an exception and then the final return. Here is also far from the peace of code that use this variable. Another bad practice for clean code and for readability. 
 
 The for loop could be moved to another method to make it a single responsibility: this loop is filtering the result coming from the TennisMarketGenerator, and potentially it could have argument null exception, in addition it could be possible to create different types of filters in the future, so I will move this functionality to a specific class FilterService or similar name. 
