@@ -48,9 +48,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factory\SportServiceFactory.cs" />
     <Compile Include="Managers\MarketManager.cs" />
     <Compile Include="Requests\MarketRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SportServices\FootballGeneratorService.cs" />
+    <Compile Include="SportServices\ISportGeneratorService.cs" />
+    <Compile Include="SportServices\TennisFilterService.cs" />
+    <Compile Include="SportServices\TennisGeneratorService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
